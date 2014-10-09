@@ -10,7 +10,7 @@
   <version>6.8.8-joust</version>
   <description>TestNG is a testing framework.</description>
   <url>http://testng.org</url>
-    
+
   <licenses>
     <license>
       <name>Apache License, Version 2.0</name>
@@ -19,12 +19,6 @@
     </license>
   </licenses>
 
-  <scm>
-    <connection>scm:git:git@github.com:cbeust/testng.git</connection>
-    <developerConnection>scm:git:git@github.com:cbeust/testng.git</developerConnection>
-    <url>git@github.com:cbeust/testng.git</url>
-  </scm>
-    
   <developers>
     <developer>
       <name>Cedric Beust</name>
@@ -32,9 +26,10 @@
   </developers>
 
   <parent>
-    <groupId>org.sonatype.oss</groupId>
-    <artifactId>oss-parent</artifactId>
-    <version>3</version>
+    <groupId>com.joust.maven</groupId>
+    <artifactId>joust-super-pom</artifactId>
+    <version>1.2</version>
+    <relativePath>joust-super-pom-1.2.pom</relativePath>
   </parent>
 
   <profiles>
@@ -82,7 +77,7 @@
           <version>1.5</version>
         </dependency>
       </dependencies>
-      
+
     </profile>
   </profiles>
 
@@ -130,8 +125,8 @@
       <optional>true</optional>
 	  </dependency>
 
-  </dependencies>    
-    
+  </dependencies>
+
   <build>
     <plugins>
 
